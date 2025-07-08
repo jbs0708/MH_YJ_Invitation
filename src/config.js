@@ -6,7 +6,7 @@ export const ADDRESS = '부산 동구 중앙대로 361번길 14'
 
 export const GROOM_NAME = "신랑 유민혁";
 export const GROOM_ACCOUNT_NUMBER = "농협 302-1566-5590-01";
-export const GROOM_KAKAOPAY = 'https://qr.kakaopay.com/FDqYjQzu8';
+export const GROOM_KAKAOPAY = 'https://qr.kakaopay.com/FXjb7CHoN';
 export const GROOM_FATHER_NAME = "아버지 유종한";
 export const GROOM_FATHER_ACCOUNT_NUMBER = "농협 352-1874-2203-13";
 export const GROOM_FATHER_KAKAOPAY = "";

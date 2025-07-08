@@ -36,7 +36,7 @@ const loadKakaoSDK = () => {
   return new Promise((resolve, reject) => {
     if (window.Kakao) {
       if (!window.Kakao.isInitialized()) {
-        window.Kakao.init('95ebee5e2635d8c256e3a2e4eba24364');
+        window.Kakao.init('9231a409e3ef488e46f59b7a5f3f787c');
       }
       resolve();
       return;
@@ -44,10 +44,11 @@ const loadKakaoSDK = () => {
 
     const script = document.createElement('script');
     script.src = 'https://developers.kakao.com/sdk/js/kakao.min.js';
+    // script.src = 'https://developers.kakao.com/sdk/js/kakao.js';    
     script.async = true;
     script.onload = () => {
       if (window.Kakao) {
-        window.Kakao.init('95ebee5e2635d8c256e3a2e4eba24364');
+        window.Kakao.init('9231a409e3ef488e46f59b7a5f3f787c');
         resolve();
       } else {
         reject(new Error('Kakao SDK 로드 실패'));

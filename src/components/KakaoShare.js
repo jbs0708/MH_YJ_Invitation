@@ -1,17 +1,17 @@
 // KakaoShare.js
 import React from 'react';
-import '../styles/KakaoShare.css'; // CSS 파일을 import 합니다.
+import '../styles/KakaoShare.css';
 import KakaoIcon from '../icon/kakaotalk.png';
 
 function KakaoShare() {
   const kakoShare = () => {
     if (!window.Kakao.isInitialized()) {
-      window.Kakao.init('95ebee5e2635d8c256e3a2e4eba24364');
+      window.Kakao.init('9231a409e3ef488e46f59b7a5f3f787c');
     }
 
     window.Kakao.Share.sendScrap({
       requestUrl: 'https://jbs0708.github.io',
-      templateId: 113582,
+      templateId: 122242,
     });
   };
 

@@ -92,7 +92,7 @@ const WeddingPage = () => {
     storyPic4:   `${publicPath}/assets/picture/storyPic_4.jpg`,
     map:         `${publicPath}/assets/picture/map.png`,
   };
-  const audioFile = `${publicPath}/assets/music/Loverboy_cut.mp3`;
+  const audioFile = `${publicPath}/assets/music/[MR]MH_YJ.mp3`;
 
   return (
     <div className="body">
@@ -113,7 +113,7 @@ const WeddingPage = () => {
               🎉 축복해주세요! 🎉
             </h2>
             <button onClick={handleWelcomeClose}>
-              보러가기
+              축복하기
             </button>
           </div>
         </div>
@@ -253,7 +253,7 @@ const WeddingPage = () => {
           <p>
             다가오는 8월 23일,<br/>
             신랑 유민혁과 신부 이예진이<br/>
-            감동을 나누었습니다.<br/>
+            감동을 나누고자합니다.<br/>
             사랑과 믿음 안에서 하나 되어<br/>
             새로운 가정을 이루려 합니다.<br/>
             함께해 주셔서<br/>
@@ -289,6 +289,51 @@ const WeddingPage = () => {
         <h4>주차안내</h4>
         <img src={images.map} alt="map" style={{ width: '100%', height: 'auto' }} />
       </div>
+      <div className="parking-table-container">
+        <table className="parking-table">
+          <thead>
+            <tr>
+              <th>주차장명</th>
+              <th>이용시간</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>DGB생명빌딩 주차장</td>
+              <td>
+                (웨딩홀 이용 시)<br/>
+                1시간 30분 무료<br/>
+                (뷔페 이용 시)<br/>
+                2시간 30분 무료<br/>
+              </td>
+            </tr>
+            <tr>
+              <td>부산주차장</td>
+              <td>
+                (웨딩홀 이용 시)<br/>
+                1시간 무료<br/>
+                (뷔페 이용 시)<br/>
+                2시간 무료<br/> 
+              </td>
+            </tr>
+            <tr>
+              <td>범일그린 공영 주차장</td>
+              <td>
+                (뷔페 이용 시)<br/>
+                2시간 무료
+              </td>
+            </tr>
+            <tr>
+              <td>동구청 외 인근 주차장</td>
+              <td>1시간 무료</td>
+            </tr>
+          </tbody>
+        </table>
+        <p style={{ marginTop: '0.5rem', fontSize: '1.2rem', fontWeight: '600', color: '#282828' }}>
+          * 주차장 이용 시 안내전화 051 - 636 - 7769
+        </p>
+      </div>
+
 
       {/* Information */}
       <div className="account-Box" ref={informationRef}>

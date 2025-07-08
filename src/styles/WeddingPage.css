@@ -74,6 +74,9 @@ html {
     background: rgba(243, 209, 252, 0.3);
     backdrop-filter: blur(8px);
     border: none;
+    box-shadow:
+        inset 0 -0.5px 0 0 white,
+        inset -0.5px 0 0 0 white;
     padding: 7px 7px;
     margin: 0 3px;
     border-radius: 8px;
@@ -157,11 +160,14 @@ body {
     margin-top: 1rem;
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
+    font-weight: 600;
+    border: none;                
+    border-bottom: 0.4px solid white;
+    border-right:  0.3px solid white;
     border-radius: 8px;
-    border: none;
     cursor: pointer;
-    background: rgba(247, 159, 255, 0.3);
-    color: #000;
+    background: rgba(251, 203, 255, 0.3);
+    color: #ec52f1;
     backdrop-filter: blur(5px);
     transition: background 0.2s;
 }
@@ -431,6 +437,49 @@ body {
     color: #424242 !important; /* ios에서 파란색으로 렌더링됨 */
     appearance: none;
 }
+
+/* === 주차장 안내표 스타일 추가 === */
+.parking-table-container {
+    width: 94%;
+    font-family: 'NanumGgocNaeEum';
+    border-radius: 12px;
+    margin: 2rem 0;
+}
+
+.parking-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #282828;
+}
+
+.parking-table th {
+    font-size: 1.5rem;
+    font-weight: 800;
+    border: 2.5px solid #fff;     /* 흰색 실선 테두리 */
+    padding: 0.75rem;
+    background: transparent;    /* 칸 배경 없애기 */
+    text-align: left;
+    vertical-align: top;
+    line-height: 1.4;
+}
+
+.parking-table td {
+    font-size: 1.3rem;
+    font-weight: 600;
+    border: 2.5px solid #fff;     /* 흰색 실선 테두리 */
+    padding: 0.75rem;
+    background: transparent;    /* 칸 배경 없애기 */
+    text-align: left;
+    vertical-align: top;
+    line-height: 1.4;
+}
+
+.parking-table thead th {
+    background: rgba(243, 209, 252, 0.6);  /* 연한 핑크 톤 헤더 */
+    color: #000;
+    font-weight: 700;
+}
+
 
 /* 반응형 디자인 */
 @media (min-width: 800px) {
