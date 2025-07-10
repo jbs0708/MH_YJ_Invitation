@@ -1,0 +1,502 @@
+html { 
+    -webkit-text-size-adjust: none; 
+}
+/* Arial */
+
+@font-face {
+    font-family: "Golden Plains";
+    font-weight: normal;
+    src: url("../fonts/Golden Plains.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "NanumSquareRoundB";
+    font-weight: normal;
+    src: url("../fonts/NanumSquareRoundB.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "NanumGothic";
+    font-weight: normal;
+    src: url("../fonts/NanumGothic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "MaruBuri";
+    font-weight: normal;
+    src: url("../fonts/MaruBuri.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "NanumHyeogICe";
+    font-weight: normal;
+    src: url("../fonts/NanumHyeogICe.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "NanumGgocNaeEum";
+    font-weight: normal;
+    src: url("../fonts/NanumGgocNaeEum.ttf") format("truetype");
+}
+
+
+/* 고정 Navbar 스타일 */
+.fixed-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 800px;
+    height: 60px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /* 글래스모피즘 */
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+
+    z-index: 1000;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.navbar-left {
+    padding-left: 12px;
+}
+
+.nav-button {
+    background: rgba(243, 209, 252, 0.3);
+    backdrop-filter: blur(8px);
+    border: none;
+    box-shadow:
+        inset 0 -0.5px 0 0 white,
+        inset -0.5px 0 0 0 white;
+    padding: 7px 7px;
+    margin: 0 3px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-family: 'MaruBuri';
+    font-weight: 700;
+    color: rgba(51, 51, 51, 0.8);
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.separator {
+    color: #4e4d4d;
+    margin: 0 5px;
+}
+
+
+/* 재생/정지 버튼 스타일 */
+.play-pause-button {
+    background: none;
+    border: none;
+    margin-top: 5px;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    overflow-x: hidden;
+    max-width: 800px;
+    
+    background-image: url('../../public/assets/picture/bg.png');
+    /* 가로 100%로 늘리고 세로는 자동 */
+    background-size: 100% auto;
+    /* 세로 방향으로 반복 */
+    background-repeat: repeat-y;
+    /* 원점(0,0)을 기준으로 중앙 상단 정렬 */
+    background-position: top center;
+
+    /* (선택) 최소 높이를 화면 높이만큼 맞춰주면 빈 공간 없이 꽉 채워집니다 */
+    min-height: 100vh;
+}
+
+/* 글래스모피즘 오버레이 (약간 밝은 톤 블러) */
+.welcome-modal-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 0 20px;
+}
+
+/* 글래스모피즘 컨테이너 */
+.welcome-modal {
+    background: rgba(247, 159, 255, 0.2);
+    border-radius: 16px;
+    padding: 1rem;
+    max-width: 400px;
+    width: 95%;
+    text-align: center;
+    color: #f81cb6b9;
+    position: relative;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+/* 모달 제목 */
+.welcome-modal h2 {
+    font-size: 1.8rem;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+    font-family: 'NanumHyeogICe';
+}
+
+/* 버튼 스타일 */
+.welcome-modal button {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;                
+    border-bottom: 0.4px solid white;
+    border-right:  0.3px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+    background: rgba(251, 203, 255, 0.3);
+    color: #ec52f1;
+    backdrop-filter: blur(5px);
+    transition: background 0.2s;
+}
+.welcome-modal button:hover {
+    background: rgba(247, 159, 255, 0.5);
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.section-title-invitation {
+    font-family: 'NanumHyeogICe';
+    font-size: 27px;
+    color: #000000;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.section-title {
+    font-family: 'NanumHyeogICe';
+    font-size: 27px;
+    color: #f86ef8;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* body */
+.body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding-bottom: 50px; */
+    overflow-x: hidden;
+    padding-top: 1px;
+}
+
+.body-top {
+    width: 100%;
+    max-width: 800px; /* 최대 너비 설정 */
+    margin: 50px 0 0 0;
+}
+
+.body-top img {
+    width: 100%;
+    height: auto;
+    display: block;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0));
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0));
+}
+
+.date {
+    margin: 30px auto 20px auto; /* 상단 여백 추가 */
+    width: 100%;
+    color: #000000;
+    text-align: center;
+}
+
+.date h1 {
+    font-family: 'NanumGgocNaeEum';
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bold;
+}
+
+.body-middle {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    padding: 0 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.location {
+    margin-top: 30px;
+    line-height: 0.8;
+}
+
+
+.main-word {
+    width: 100%;
+    text-align: center;
+    font-family: 'NanumGgocNaeEum';
+    font-size: 1.5rem;
+}
+
+.main-word p {
+    font-family: 'NanumGgocNaeEum';
+    color: #282828;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    line-height: 2.2;
+    font-weight: 600;
+}
+
+.body-footer {
+    font-family: 'NanumGgocNaeEum';
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin: 30px auto 0 auto;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.row1, .row2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* 세로 정렬 추가 */
+    line-height: 30px;
+    margin-bottom: 10px; /* 행 간 간격 추가 */
+}
+
+.parents {
+    font-size: 1.4rem;
+}
+
+.bulit {
+    font-size: 1rem;
+    margin: 0 5px; /* 점 간 간격 조정 */
+}
+
+.groom {
+    /* groom 클래스 스타일링 추가 가능 */
+}
+
+.row1 p, .row2 p {
+    color: #282828;
+    font-size: 1.1rem;
+    line-height: 0.8;
+    letter-spacing: 4px;
+    margin: 0 5px; /* 텍스트 간 간격 조정 */
+}
+
+/* our-story-section */
+.our-story-section {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto; /* 상단과 하단에 여백 추가 */
+}
+
+.our-story1-img,
+.our-story2-img,
+.our-story3-img,
+.our-story4-img,
+.our-story5-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto; /* 이미지 간 간격 조정 */
+    /* opacity: 0.9; */
+}
+
+.our-story {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.our-story h1 {
+    font-family: 'NanumGgocNaeEum';
+    margin-top: 20px;
+    font-size: 1.3rem;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.our-story p {
+    font-family: 'NanumGgocNaeEum';
+    color: #282828;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin: 10px 0;
+    line-height: 2.2;
+    font-weight: 600;
+}
+
+/* toggle button */
+.toggle-story-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #ff69b4; /* 원하는 색상으로 변경 가능 */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 60px;
+}
+
+.account-Box {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto 0 auto;
+    padding: 10px 0 0 0;
+    background: none; /* 배경색 제거 */
+    border: none; /* 테두리 제거 */
+    position: relative;
+    white-space: nowrap;
+    flex-direction: column;
+}
+
+.account-Box .line {
+    flex: 1;
+    height: 1px; /* 선의 두께 */
+    background-color: #ff85c1; /* 선의 색상 핑크 */
+    margin: 10px 3%; /* 텍스트와 선 사이 간격 */
+}
+
+.account-Box .info-title {
+    margin: 25px 0;
+    font-size: 1.7rem;
+    font-family: 'NanumGgocNaeEum';
+    font-weight: 700;
+}
+
+.account-Box .info-text {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'NanumGgocNaeEum';
+    font-weight: 500;
+}
+
+.address {
+    width: 95%;
+    text-align: center;
+    line-height: 0.7;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 0.15rem;
+}
+
+.address h4 {
+    margin-top: 20px;
+    font-family: 'NanumGgocNaeEum';
+}
+
+.address p {
+    margin-top: 15px;
+    font-family: 'NanumGgocNaeEum';
+    font-size: 14px;
+}
+
+.address-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto 50px auto;
+    padding: 8px 8px;
+    background: none;
+    border:#c1c1c1 1px solid;
+    cursor: pointer;
+    position: relative;
+    font-size: 12px;
+    background-color: rgb(250, 250, 250);
+    border-radius: 5px;
+    color: #424242 !important; /* ios에서 파란색으로 렌더링됨 */
+    appearance: none;
+}
+
+/* === 주차장 안내표 스타일 추가 === */
+.parking-table-container {
+    width: 94%;
+    font-family: 'NanumGgocNaeEum';
+    border-radius: 12px;
+    margin: 2rem 0;
+}
+
+.parking-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #282828;
+}
+
+.parking-table th {
+    font-size: 1.5rem;
+    font-weight: 800;
+    border: 2.5px solid #fff;     /* 흰색 실선 테두리 */
+    padding: 0.75rem;
+    background: transparent;    /* 칸 배경 없애기 */
+    text-align: left;
+    vertical-align: top;
+    line-height: 1.4;
+}
+
+.parking-table td {
+    font-size: 1.3rem;
+    font-weight: 600;
+    border: 2.5px solid #fff;     /* 흰색 실선 테두리 */
+    padding: 0.75rem;
+    background: transparent;    /* 칸 배경 없애기 */
+    text-align: left;
+    vertical-align: top;
+    line-height: 1.4;
+}
+
+.parking-table thead th {
+    background: rgba(243, 209, 252, 0.6);  /* 연한 핑크 톤 헤더 */
+    color: #000;
+    font-weight: 700;
+}
+
+
+/* 반응형 디자인 */
+@media (min-width: 800px) {
+    body {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .main-word p {
+        font-size: 1rem;
+    }
+    .our-story h1 {
+        font-size: 1.4rem;
+    }
+    .our-story p {
+        font-size: 1rem; 
+    }
+    .date h1 {
+        font-size: 1.5rem;
+    }
+}
