@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "./static/css/main.8fc21586.css",
+    "main.css": "./static/css/main.e958a8e0.css",
     "main.js": "./static/js/main.ae0edf05.js",
     "static/media/MaruBuri.ttf": "./static/media/MaruBuri.5a21263786cb0e2d0481.ttf",
     "static/media/NanumHyeogICe.ttf": "./static/media/NanumHyeogICe.0368a3467e1a9eb5b6b3.ttf",
-    "static/media/나눔손글씨 한윤체.ttf": "./static/media/나눔손글씨 한윤체.6b946a1a55ed162157b7.ttf",
+    "static/media/Han.ttf": "./static/media/Han.6b946a1a55ed162157b7.ttf",
     "static/media/NanumGgocNaeEum.ttf": "./static/media/NanumGgocNaeEum.f5b3c25b1bc2965259bb.ttf",
     "static/media/NanumGothic.ttf": "./static/media/NanumGothic.46c03af3832f3527bd51.ttf",
     "static/media/bg.png": "./static/media/bg.7b23e8001e492bf56deb.png",
@@ -21,11 +21,11 @@
     "static/media/down.svg": "./static/media/down.5d592df8068fd4c3c653bc7bc42ddf50.svg",
     "static/media/play.svg": "./static/media/play.1b21e30c572895a7855884585870a88f.svg",
     "index.html": "./index.html",
-    "main.8fc21586.css.map": "./static/css/main.8fc21586.css.map",
+    "main.e958a8e0.css.map": "./static/css/main.e958a8e0.css.map",
     "main.ae0edf05.js.map": "./static/js/main.ae0edf05.js.map"
   },
   "entrypoints": [
-    "static/css/main.8fc21586.css",
+    "static/css/main.e958a8e0.css",
     "static/js/main.ae0edf05.js"
   ]
 }
