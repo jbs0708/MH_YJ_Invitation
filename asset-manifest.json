@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4929f5fb.css",
-    "main.js": "/static/js/main.faf0665c.js",
+    "main.css": "/static/css/main.901e5d01.css",
+    "main.js": "/static/js/main.964a5ff0.js",
     "static/media/MaruBuri.ttf": "/static/media/MaruBuri.5a21263786cb0e2d0481.ttf",
     "static/media/NanumHyeogICe.ttf": "/static/media/NanumHyeogICe.0368a3467e1a9eb5b6b3.ttf",
     "static/media/NanumGgocNaeEum.ttf": "/static/media/NanumGgocNaeEum.f5b3c25b1bc2965259bb.ttf",
@@ -10,6 +10,7 @@
     "static/media/NanumSquareRoundB.ttf": "/static/media/NanumSquareRoundB.8ab117fc37409bd022e5.ttf",
     "static/media/Golden Plains.ttf": "/static/media/Golden Plains.60a51076f8b0c6ed7c4f.ttf",
     "static/media/kakaotalk.png": "/static/media/kakaotalk.9d8c77db3ec1788580ce.png",
+    "static/media/phone-call.png": "/static/media/phone-call.49be259c5435b1c950e9.png",
     "static/media/heart.png": "/static/media/heart.f87f9616cbe62cc4b80d.png",
     "static/media/KakaoPay.jpg": "/static/media/KakaoPay.1cc1e46485be60fe0bc5.jpg",
     "static/media/pink_heart.png": "/static/media/pink_heart.e37715af149aec3e7713.png",
@@ -20,11 +21,11 @@
     "static/media/down.svg": "/static/media/down.5d592df8068fd4c3c653bc7bc42ddf50.svg",
     "static/media/play.svg": "/static/media/play.1b21e30c572895a7855884585870a88f.svg",
     "index.html": "/index.html",
-    "main.4929f5fb.css.map": "/static/css/main.4929f5fb.css.map",
-    "main.faf0665c.js.map": "/static/js/main.faf0665c.js.map"
+    "main.901e5d01.css.map": "/static/css/main.901e5d01.css.map",
+    "main.964a5ff0.js.map": "/static/js/main.964a5ff0.js.map"
   },
   "entrypoints": [
-    "static/css/main.4929f5fb.css",
-    "static/js/main.faf0665c.js"
+    "static/css/main.901e5d01.css",
+    "static/js/main.964a5ff0.js"
   ]
 }
