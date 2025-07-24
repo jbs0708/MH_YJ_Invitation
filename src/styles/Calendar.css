@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "NanumSquareRoundB";
+  font-weight: normal;
+  src: url("../fonts/NanumSquareRoundB.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MaruBuri";
+  font-weight: normal;
+  src: url("../fonts/MaruBuri.ttf") format("truetype");
+}
+
+.calendar-container {
+  text-align: center;
+  font-family: Arial;
+}
+
+.calendar-container .date {
+  margin-bottom: 40px;
+}
+
+.calendar-container .date p {
+  line-height: 0.8;
+  font-family: 'NanumGgocNaeEum';
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.calendar-header, .calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  margin: 20px 20px;
+}
+
+.calendar-day-header {
+  font-weight: bold;
+}
+
+.calendar-day-header.sunday {
+  color: #ff6666; /* 연한 핑크색 */
+}
+
+.calendar-day-header.saturday {
+  color: #66b2ff; /* 연한 파란색 */
+}
+
+.calendar-cell {
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calendar-cell.sunday {
+  color: #ff6666; /* 연한 핑크색 */
+}
+
+.calendar-cell.saturday {
+  color: #66b2ff; /* 연한 파란색 */
+}
+
+.calendar-cell.wedding-day {
+  background-image: url('../svg/heart.svg'); /* 하트 SVG 배경 이미지 */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  padding: 10px; /* 다른 셀들과 동일한 padding 유지 */
+  border-radius: 5px; /* 다른 셀들과 동일한 border-radius */
+}
+
+.calendar-cell.wedding-day span {
+  position: absolute; /* 텍스트 위치 조정 */
+  color: white;
+  font-size: 16px;
+  font-weight: 550;
+}
+
+.empty {
+  visibility: hidden;
+}
+
+.d-day {
+  margin: 50px 0;
+  font-family: 'NanumSquareRoundB';
+}
